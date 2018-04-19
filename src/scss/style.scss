@@ -1,0 +1,25 @@
+/*!
+ * CoreUI - Open Source Bootstrap Admin Template
+ * MODIFIED BY BananiumLabs - CUSTOM For Cheery Class
+ * @version v1.0.10
+ * @link http://coreui.io
+ * @link https://bananiumlabs.com
+ * Copyright (c) 2018 creativeLabs Łukasz Holeczek
+ * Copyright (c) 2018 bananiumLabs
+ * @license MITtus
+ */
+
+// Override Boostrap variables
+@import "bootstrap-variables";
+
+// Import Bootstrap source files
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Override core variables
+@import "core-variables";
+
+// Import core styles
+@import "core/core";
+
+// Custom styles
+@import "custom";
