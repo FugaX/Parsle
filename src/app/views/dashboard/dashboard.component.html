@@ -11,8 +11,7 @@
       <div>
         <div class="row">
 
-          <button type="button" class="btn btn-primary" (click)="visible = !visible">Request Extension</button>
-          <button type="button" class="btn btn-warning" (click)="visibleDebug = !visibleDebug">Show Debug Messages</button>
+          <button type="button" class="btn btn-primary" (click)="visible = !visible">Submit Conflict</button>
         </div>
         <h3 class="panel-title">
           <!--<span class="title">Click me!</span>-->
@@ -27,8 +26,8 @@
 
               <div class="form-group" [class.has-error]="!detail.touched">
 
-                <label for="detail" class="flow-text">Please Describe Why You Would Require An Extension</label>
-                <p>Please be descriptive and your teacher may request additional verifications of your claim.</p>
+                <label for="detail" class="flow-text">Please Describe The Conflict</label>
+                <p>Please be descriptive so that arrangements can be made for rescheduling</p>
                 <input [formControl]="detail" required type="text" class="form-control" id="detail" name="detail">
                 <div class="help-block">
                   <ul class="list-unstyled">
@@ -42,16 +41,7 @@
                   <!--spacer-->
                 </ul>
               </div>
-              <div class="alert alert-warning" role="alert">
-                <b>Note: This action will deduct 1 Late Pass.</b>
-              </div>
-              <div class="alert alert-info" role="info">
-                <b>You have {{ latePassAmount }} Late Passes Left.</b>
-              </div>
-              <button ng-disabled="extensionForm.$invalid || extensionForm.$pending" type="submit" class="btn btn btn-primary">
-                Submit Extension Request
-              </button>
-
+             
 
             </form>
 
@@ -92,7 +82,7 @@
 
     </div>
     <div class="modal-footer">
-      <button type="button" class="btn btn-outline-secondary" (click)="close()">OK</button>
+      <button type="button" class="btn btn-outline-secondary" (click)="close()">Submit Request</button>
     </div>
   </ng-template>
 
