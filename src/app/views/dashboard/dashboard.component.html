@@ -12,7 +12,10 @@
         <div class="row">
 
           <button type="button" class="btn btn-primary" (click)="visible = !visible">Request Extension</button>
-          <button type="button" class="btn btn-warning" (click)="visibleDebug = !visibleDebug">Show Debug Messages</button>
+          <button type="button" class="btn btn-primary" (click)="visible = !visible">Schedule Meeting</button>
+          <button type="button" class="btn btn-primary" (click)="visible = !visible">Schedule Collab</button>
+
+
         </div>
         <h3 class="panel-title">
           <!--<span class="title">Click me!</span>-->
@@ -42,15 +45,8 @@
                   <!--spacer-->
                 </ul>
               </div>
-              <div class="alert alert-warning" role="alert">
-                <b>Note: This action will deduct 1 Late Pass.</b>
-              </div>
-              <div class="alert alert-info" role="info">
-                <b>You have {{ latePassAmount }} Late Passes Left.</b>
-              </div>
-              <button ng-disabled="extensionForm.$invalid || extensionForm.$pending" type="submit" class="btn btn btn-primary">
-                Submit Extension Request
-              </button>
+              
+             
 
 
             </form>
@@ -92,7 +88,7 @@
 
     </div>
     <div class="modal-footer">
-      <button type="button" class="btn btn-outline-secondary" (click)="close()">OK</button>
+      <button type="button" class="btn btn-outline-secondary" (click)="close()">Submit Request</button>
     </div>
   </ng-template>
 
